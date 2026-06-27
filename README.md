@@ -45,7 +45,7 @@ src/
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/your-username/student-management-frontend.git
+git clone https://github.com/sahumansi105-lgtm/student-management-system
 cd student-management-frontend
 2️⃣ Install Dependencies
 npm install
