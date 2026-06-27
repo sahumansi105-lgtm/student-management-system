@@ -1,63 +1,93 @@
-🎓 Student Management System
-📌 Overview
+# 🎓 Student Management System - Frontend
 
-A full-stack Student Management System built using React.js for frontend and Node.js + Express for backend.
-It performs full CRUD operations with search, pagination, and toast notifications for better user experience.
+## 📌 Overview
+This is the frontend for the Student Management System built using **React.js**.  
+It interacts with the backend APIs to perform full CRUD operations with search and pagination features.
 
-⚙️ Features
-➕ Add Student
-✏️ Edit Student
-❌ Delete Student
-🔍 Search Students
-📄 Pagination
-🔔 Toast Notifications
-📱 Responsive UI
+---
 
-🛠️ Tech Stack
-Frontend:
-React.js
-Axios
-CSS (Custom Styling)
-Backend:
-Node.js
-Express.js
-Prisma ORM
-PostgreSQL / MySQL
+## ⚙️ Features
+- ➕ Add Student
+- ✏️ Edit Student
+- ❌ Delete Student
+- 🔍 Search Students by name
+- 📄 Pagination support
+- 🔔 Toast notifications for actions
+- 📱 Responsive UI design
 
-🚀 Setup Instructions
+---
 
-🔹 Frontend Setup
-npm install
-npm run dev
+## 🛠️ Tech Stack
+- React.js
+- Axios (API calls)
+- JavaScript (ES6)
+- CSS (Custom styling)
 
-🔹 Backend Setup
-npm install
-npx prisma generate
-npx prisma migrate dev
-npm run dev
+---
 
+## 📁 Project Structure
 
-📁 Project Structure (Frontend)
 src/
 ├── components/
-│   ├── StudentForm.jsx
-│   ├── StudentTable.jsx
-│   └── Pagination.jsx
+│ ├── StudentForm.jsx
+│ ├── StudentTable.jsx
+│ └── Pagination.jsx
 ├── services/
-│   └── api.js
+│ └── api.js
 ├── App.jsx
 ├── main.jsx
 └── index.css
-📌 Backend Link
 
-👉 https://github.com/sahumansi105-lgtm/student-management-backend
+
+---
+
+## 🚀 Setup Instructions
+
+### 1️⃣ Clone Repository
+
+git clone https://github.com/your-username/student-management-frontend.git
+cd student-management-frontend
+2️⃣ Install Dependencies
+npm install
+3️⃣ Run Project
+npm run dev
+🔗 Backend Connection
+
+Make sure backend is running on:
+
+http://localhost:5000
+
+Update API base URL inside:
+
+src/services/api.js
+
+Example:
+
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: "http://localhost:5000/api",
+});
+
+export default api;
+🧠 Architecture Explanation
+Components → UI parts like form, table, pagination
+Services → Handles API calls using Axios
+App.jsx → Main logic (state management, fetch data)
+Backend API → Provides student data
+
+Flow:
+User → React UI → Axios → Backend API → Database
 
 📌 Assumptions Made
-Pagination limit is fixed to 5 students per page
+Backend runs locally on port 5000
+Pagination limit is 5 students per page
 Search is based only on student name
-Simple CRUD system without authentication roles
-Backend runs separately from frontend
-
-
+Basic UI styling using CSS (no Tailwind)
 👨‍💻 Author
-Built as part of Frontend Developer Assignment.
+
+Built as part of Frontend Developer Assignment
+
+🚀 Conclusion
+
+This frontend provides a simple, clean, and responsive interface for managing student data with full backend integration.
