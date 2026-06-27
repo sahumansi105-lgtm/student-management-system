@@ -1,0 +1,184 @@
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* ===== TITLE ===== */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* ===== SEARCH BOX ===== */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== FORM ===== */
+form {
+  background: #f7f8fc;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* ===== INPUTS INSIDE FORM ===== */
+form input {
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTON BASE ===== */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* ===== PRIMARY BUTTON (ADD / UPDATE) ===== */
+button[type="submit"] {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== SECONDARY BUTTON ===== */
+button[type="button"] {
+  background: #f1f1f1;
+  color: #333;
+}
+
+button[type="button"]:hover {
+  background: #ddd;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* HEADER */
+th {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* ROWS */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+tr:hover {
+  background: #f5f7ff;
+}
+
+/* ===== EDIT BUTTON ===== */
+.edit-btn {
+  background: #4caf50;
+  color: white;
+  margin-right: 5px;
+}
+
+.edit-btn:hover {
+  background: #3e8e41;
+  transform: scale(1.05);
+}
+
+/* ===== DELETE BUTTON ===== */
+.delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.pagination button {
+  background: #667eea;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.pagination button:hover {
+  background: #5a67d8;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
